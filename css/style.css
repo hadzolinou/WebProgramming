@@ -854,15 +854,15 @@ textarea.input {
 .product {
   position: relative;
   margin: 15px 0px;
-  -webkit-box-shadow: 0px 0px 0px 0px #000269, 0px 0px 0px 1px #000269;
-  box-shadow: 0px 0px 0px 0px #000269, 0px 0px 0px 1px #000269;
+  -webkit-box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
+  box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
 .product:hover {
-  -webkit-box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px #00083f;
-  box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px #00083f;
+  -webkit-box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px #D10024;
+  box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px #D10024;
 }
 
 .product .product-img {
@@ -887,13 +887,13 @@ textarea.input {
 
 .product .product-img .product-label>span.sale {
   background-color: #FFF;
-  border-color: #00083f;
-  color: #00083f;
+  border-color: #D10024;
+  color: #D10024;
 }
 
 .product .product-img .product-label>span.new {
-  background-color: #00083f;
-  border-color: #00083f;
+  background-color: #D10024;
+  border-color: #D10024;
   color: #FFF;
 }
 
@@ -921,7 +921,7 @@ textarea.input {
 }
 
 .product .product-body .product-name>a:hover, .product .product-body .product-name>a:focus {
-  color: #000269;
+  color: #D10024;
 }
 
 .product .product-body .product-price {
@@ -1117,7 +1117,7 @@ textarea.input {
 }
 
 .product-widget .product-body .product-name>a:hover, .product-widget .product-body .product-name>a:focus {
-  color: #000269;
+  color: #D10024;
 }
 
 .product-widget .product-body .product-price {
