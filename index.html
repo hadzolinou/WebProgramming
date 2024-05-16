@@ -50,9 +50,14 @@
 					<li><a href="#"><i class="fa fa-envelope-o"></i> soundSa@email.com</a></li>
 					<li><a href="#"><i class="fa fa-map-marker"></i> Ferhad Paše Sokolovića 15A</a></li>
 				</ul>
+     MBranch
 				<ul class="header-links pull-right">
 
 					<li><a href="http://localhost/WebProgramming/login.html"><i class="fa fa-user-o"></i>Login</a></li>
+
+				<ul class="header-links pull-right" id="userLoginStatus">
+					<li><a href="#login"><i class="fa fa-user-o"></i>Login</a></li>
+ main
 				</ul>
 			</div>
 		</div>
@@ -67,7 +72,11 @@
 					<!-- LOGO -->
 					<div class="col-md-3">
 						<div class="header-logo">
+ MBranch
 							<a href="#" class="logo">
+
+							<a href="/" class="logo">
+ main
 								<img src="./img/logo.png" alt="Sound logo" style="width : 100px" />
 							</a>
 						</div>
@@ -156,6 +165,7 @@
 					<!-- /ACCOUNT -->
 				</div>
 				<!-- row -->
+ MBranch
 			</div>
 			<!-- container -->
 		</div>
@@ -187,10 +197,48 @@
 				</ul>
 				<!-- /NAV -->
 			</div>
+
+			</div>
+			<!-- container -->
+		</div>
+		<!-- /MAIN HEADER -->
+	</header>
+	<nav id="navigation">
+		<!-- container -->
+		<div class="container">
+			<!-- responsive-nav -->
+			<div id="responsive-nav">
+				<!-- NAV -->
+				<ul class="main-nav nav navbar-nav">
+					<li><a href="#homepage">Homepage</a></li>
+					<li><a href="#store">Store</a></li>
+					<li><a href="#product">Product</a></li>
+					<li><a href="#signup">Sign up</a></li>
+					<li><a href="#login">Login</a></li>
+					<li><a href="#checkout">Checkout</a></li>
+				</ul>
+				<!-- /NAV -->
+			</div>
+ main
 			<!-- /responsive-nav -->
 		</div>
 		<!-- /container -->
 	</nav>
+ MBranch
+
+	<!-- /HEADER -->
+	<main id="spapp" role="main">
+		<section id="homepage" data-load="homepage.html"></section>
+		<section id="signup" data-load="signup.html"></section>
+		<section id="login" data-load="login.html"></section>
+		<section id="product" data-load="product.html"></section>
+		<section id="checkout" data-load="checkout.html"></section>
+		<section id="store" data-load="store.html"></section>
+	</main>
+
+	<!-- NAVIGATION -->
+	
+ main
 	<!-- /NAVIGATION -->
 
 
@@ -248,7 +296,11 @@
 						<div class="footer">
 							<h3 class="footer-title">Service</h3>
 							<ul class="footer-links">
+ MBranch
 								<li><a href="http://localhost/WebProgramming/login.html">Login</a></li>
+
+								<li><a href="#">Login</a></li>
+ main
 								<li><a href="#">View Cart</a></li>
 								<li><a href="#">Wishlist</a></li>
 								<li><a href="#">Track My Order</a></li>
@@ -297,6 +349,7 @@
 
 	<!-- jQuery Plugins -->
 
+ MBranch
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/nouislider.min.js"></script>
@@ -315,3 +368,42 @@
 </script>
 
 </html>
+=======
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/nouislider.min.js"></script>
+	<script src="./js/jquery.zoom.min.js"></script>
+	<script src="./js/main.js"></script>
+
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.spapp.min.js"></script>
+<script>
+	let app = $.spapp({
+		defaultView : '#homepage',
+		templateDir : "./tpl/",
+	});
+	app.run();
+</script>
+<script>
+    // Select the target element where you want to insert the link
+    var userStatusElement = document.getElementById('userLoginStatus');
+
+    if (localStorage.getItem('username') !== null) {
+        userStatusElement.innerHTML = '<li><a href="#userProfile"><i class="fa fa-user-o"></i>Hi, '+localStorage.getItem('username') +'</li>' +
+                                      '<li><a href="#logout" onclick="logoutUser()"><i class="fa fa-sign-out"></i> Logout</a></li>';
+    } else {
+        // If the username doesn't exist in localStorage, show a login link
+        userStatusElement.innerHTML = '<li><a href="#login"><i class="fa fa-user-o"></i> Login</a></li>';
+    }
+
+    // Example logout function that clears username from localStorage and reloads the page
+    function logoutUser() {
+        localStorage.removeItem('username');
+		localStorage.removeItem('password');
+        window.location.reload();
+	}
+</script>
+</html>
+ main
