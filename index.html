@@ -50,8 +50,14 @@
 					<li><a href="#"><i class="fa fa-envelope-o"></i> soundSa@email.com</a></li>
 					<li><a href="#"><i class="fa fa-map-marker"></i> Ferhad Paše Sokolovića 15A</a></li>
 				</ul>
+     MBranch
+				<ul class="header-links pull-right">
+
+					<li><a href="http://localhost/WebProgramming/login.html"><i class="fa fa-user-o"></i>Login</a></li>
+
 				<ul class="header-links pull-right" id="userLoginStatus">
 					<li><a href="#login"><i class="fa fa-user-o"></i>Login</a></li>
+ main
 				</ul>
 			</div>
 		</div>
@@ -66,7 +72,11 @@
 					<!-- LOGO -->
 					<div class="col-md-3">
 						<div class="header-logo">
+ MBranch
+							<a href="#" class="logo">
+
 							<a href="/" class="logo">
+ main
 								<img src="./img/logo.png" alt="Sound logo" style="width : 100px" />
 							</a>
 						</div>
@@ -155,6 +165,39 @@
 					<!-- /ACCOUNT -->
 				</div>
 				<!-- row -->
+ MBranch
+			</div>
+			<!-- container -->
+		</div>
+		<!-- /MAIN HEADER -->
+	</header>
+	<!-- /HEADER -->
+	<main id="spapp" role="main">
+		<section id="homepage" data-load="homepage.html"></section>
+		<section id="login" data-load="login.html"></section>
+		<section id="product" data-load="product.html"></section>
+		<section id="checkout" data-load="checkout.html"></section>
+		<section id="store" data-load="store.html"></section>
+	</main>
+
+	<!-- NAVIGATION -->
+	<nav id="navigation">
+		<!-- container -->
+		<div class="container">
+			<!-- responsive-nav -->
+			<div id="responsive-nav">
+				<!-- NAV -->
+				<ul class="main-nav nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#homepage">Homepage</a></li>
+					<li><a href="#login">Login</a></li>
+					<li><a href="#product">Product</a></li>
+					<li><a href="#store">Store</a></li>
+					<li><a href="#checkout">Checkout</a></li>
+				</ul>
+				<!-- /NAV -->
+			</div>
+
 			</div>
 			<!-- container -->
 		</div>
@@ -176,10 +219,13 @@
 				</ul>
 				<!-- /NAV -->
 			</div>
+ main
 			<!-- /responsive-nav -->
 		</div>
 		<!-- /container -->
 	</nav>
+ MBranch
+
 	<!-- /HEADER -->
 	<main id="spapp" role="main">
 		<section id="homepage" data-load="homepage.html"></section>
@@ -192,6 +238,7 @@
 
 	<!-- NAVIGATION -->
 	
+ main
 	<!-- /NAVIGATION -->
 
 
@@ -249,7 +296,11 @@
 						<div class="footer">
 							<h3 class="footer-title">Service</h3>
 							<ul class="footer-links">
+ MBranch
+								<li><a href="http://localhost/WebProgramming/login.html">Login</a></li>
+
 								<li><a href="#">Login</a></li>
+ main
 								<li><a href="#">View Cart</a></li>
 								<li><a href="#">Wishlist</a></li>
 								<li><a href="#">Track My Order</a></li>
@@ -298,6 +349,26 @@
 
 	<!-- jQuery Plugins -->
 
+ MBranch
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.spapp.min.js"></script>
+<script>
+	let app = $.spapp({
+		templateDir: "./WebProgramming/tpl/",
+	});
+	app.run();
+</script>
+
+</html>
+=======
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/slick.min.js"></script>
 	<script src="./js/nouislider.min.js"></script>
@@ -335,3 +406,4 @@
 	}
 </script>
 </html>
+ main
